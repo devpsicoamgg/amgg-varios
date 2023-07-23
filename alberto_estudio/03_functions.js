@@ -5,11 +5,11 @@
 // Puede o no recibir parametros. 
 // Puede devolver valores.
 // Un tipo de dato muy especial, son consideradas objetos. 
-// 
 // las funciones se definen o "declaran" de diferente manera.  
 
-    //***FUNCIÓN DECLARADA*** - SE DEFINE EN EL AMBITO GLOBAL. ES DECLARADA PUES LLEVA LA PALABRA RESERVADA function Y LLEVA NOMBRE 
-                              //PARA PODER SER LLAMADA DESDE CUALQUIER PARTE. 
+    //****FUNCIÓN DECLARADA**** - SE DEFINE EN EL AMBITO GLOBAL. ES DECLARADA PUES LLEVA LA PALABRA RESERVADA function Y LLEVA NOMBRE 
+    //PARA PODER SER LLAMADA DESDE CUALQUIER PARTE.
+    //DENTRO DE LOS PARENTESIS VA EL CUERPO.  
     function sum(a, b) {
         return a + b;
       }
@@ -25,6 +25,5 @@
 
     //***FUNCIÓN FLECHA ->*** - NO NECESARIAMENTE EN UNA VARIABLE. NO RECOMENDADA EN OBJETOS. 
     const sum = (a, b) => a + b;
-
 
     //  En JavaScript, es común utilizar camelCase para nombrar variables y funciones, y PascalCase para nombrar clases. 
