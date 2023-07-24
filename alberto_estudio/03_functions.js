@@ -9,7 +9,8 @@
 
     //****FUNCIÓN DECLARADA**** - SE DEFINE EN EL AMBITO GLOBAL. ES DECLARADA PUES LLEVA LA PALABRA RESERVADA function Y LLEVA NOMBRE 
     //PARA PODER SER LLAMADA DESDE CUALQUIER PARTE.
-    //DENTRO DE LOS PARENTESIS VA EL CUERPO.  
+    //DENTRO DE LOS {BRACKETS} VA EL CUERPO.  
+    //SE INVCOCA CON ()
     function sum(a, b) {
         return a + b;
       }
@@ -21,7 +22,7 @@
       };
 
     //***FUNCIÓN CON CONSTRUCTOR***      
-    let sum = new Function("a", "b", "return a + b");
+    let sum = new Function(arg1, arg2, arg3 "cuerpo de la ƒ()");
 
     //***FUNCIÓN FLECHA ->*** - NO NECESARIAMENTE EN UNA VARIABLE. NO RECOMENDADA EN OBJETOS. 
     const sum = (a, b) => a + b;
