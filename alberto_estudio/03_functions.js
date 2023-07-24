@@ -22,7 +22,7 @@
       };
 
     //***FUNCIÓN CON CONSTRUCTOR***      
-    let sum = new Function(arg1, arg2, arg3 "cuerpo de la ƒ()");
+    let sum = new Function(arg1, arg2, arg3, "cuerpo de la ƒ()");
 
     //***FUNCIÓN FLECHA ->*** - NO NECESARIAMENTE EN UNA VARIABLE. NO RECOMENDADA EN OBJETOS. 
     const sum = (a, b) => a + b;
