@@ -3,10 +3,10 @@
 // la clase esta compuesta por ENTIDADES, estas son representaciones de objetos, cosas y/o conceptos del mundo tangible.
 // las CLASE CONJUNTO DE DATOS QUE PERTENECE A UNA ENTIDAD, similares a plantillas o modelos.
 // las INSTANCIA  terminan siendo objetos y las clases los "moldes" para hacer mas
-// Existen 2 formas diferentes de crear una clase.
+// Existen 2 formas diferentes de crear una clase.la prototipal con f() constructora y la de expresión de clases. 
 // Terminos clave: Clase-molde, Objetos-instancia de la clase, Atributos - propiedades variables, Métodos - f(). 
 
-// FUNCIÓN CONSTRUCTORA // SE CREA LA CLASE EN UNA FUNCIÓN .
+// PROTOTIPAL DE FUNCIÓN CONSTRUCTORA // SE CREA EL PROTOTIPO  EN UNA FUNCIÓN .
 function Auto(puertas, color, marca, año, ruedas) {
   this.puertas = puertas;
   this.color = color;
