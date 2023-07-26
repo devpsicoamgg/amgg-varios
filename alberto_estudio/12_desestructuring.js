@@ -2,11 +2,11 @@
 const person = { name: "John", age: 30, city: "New York" };
 
 // Destructuración de objetos
-const { name, age, city } = person;
+const { nameOne, age, cityOne } = person;
 
-console.log(name); // Output: John
+console.log(nameOne); // Output: John
 console.log(age);  // Output: 30
-console.log(city); // Output: New York
+console.log(cityOne); // Output: New York
 
 // Ejemplo 2: Destructuración con asignación de alias
 const user = { firstName: "Alice", lastName: "Smith", email: "alice@example.com" };
