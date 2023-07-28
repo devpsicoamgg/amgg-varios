@@ -64,9 +64,9 @@ if (fecha1 < fecha2) {
 
 
 
-function calcularEdad(fechaNacimiento, fechaActual) {
+function calcularEdad(fechaNacimiento, fechaActuales) {
     const nacimiento = new Date(fechaNacimiento);
-    const actual = new Date(fechaActual);
+    const actual = new Date(fechaActuales);
   
     // Calcular la diferencia en milisegundos
     const diferenciaMilisegundos = actual - nacimiento;
@@ -82,9 +82,9 @@ function calcularEdad(fechaNacimiento, fechaActual) {
   
   // Ejemplo de uso
   const fechaNacimiento = "1979-11-16";
-  const fechaActual = "2023-07-27";
+  const fechaActuales = "2023-07-27";
   
-  const edad = calcularEdad(fechaNacimiento, fechaActual);
+  const edad = calcularEdad(fechaNacimiento, fechaActuales);
   console.log(edad);
   
   // Salida: { años: 42, meses: 8, dias: 10 }  
