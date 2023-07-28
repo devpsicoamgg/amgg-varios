@@ -55,7 +55,16 @@ function textoInvertido (texto) {
 
 
     
-    /* 6) Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
+   function retornarVeces(texto, palabra) {
+    
+     /* 6) Programa una función para contar el número de veces que se repite 
+     una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
+  const patron = new RegExp(palabra, "g");
+  const resultado = texto.match(patron);
+  return resultado ? resultado.length : 0;
+}
+
+console.log(retornarVeces("hola mundo adios mundo", "mundos"));
 
 
 
