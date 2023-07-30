@@ -1,13 +1,20 @@
-    
-    function sumaCaracteres (texto) {
-        /* 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFunción("Hola Mundo") devolverá 10 */
-    
+/* 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFunción("Hola Mundo") devolverá 10 */
+// 01. V1. CLASIC
+function sumaCaracteres (texto="") {
+    let msjErr = 'Los siento, el valor ingresado no es un texto'
+        if(texto === undefined || texto === null || texto === undefined) return msjErr;
             let result = 0;
              for (let i = 0; i < texto.length; i++) {
                 result += 1
              };
               return result;
         }
+// V2. LENGTH
+function sumaCaracteres (texto="") {
+            let msjErr = 'Los siento, el valor ingresado no es un texto'
+                if(texto === undefined || texto === null || texto === undefined) return msjErr;
+                return texto.length                      
+                }
     
     console.log(sumaCaracteres("Hola Mundo"))
 
