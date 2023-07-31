@@ -1,3 +1,28 @@
+/*
+El objeto Map en JavaScript es una estructura de datos que permite mapear claves a valores. 
+A diferencia de un objeto regular, las claves en un objeto Map pueden ser de cualquier tipo, 
+incluyendo objetos y funciones. A continuación, se presenta una explicación del objeto Map y 
+sus principales características:
+
+    El objeto Map almacena pares clave-valor, donde cada clave es única y está asociada a un valor.
+    Las claves y los valores pueden ser de cualquier tipo, y no están limitados a ser solo cadenas 
+    de texto como en un objeto regular.
+    Los pares clave-valor en un objeto Map se mantienen en el orden de inserción, lo que significa
+    que los elementos se pueden iterar en el mismo orden en que se agregaron.
+    A diferencia de un objeto regular, un objeto Map tiene una interfaz más intuitiva y métodos 
+    dedicados para manipular y acceder a los elementos.
+
+Algunos métodos importantes del objeto Map son:
+
+    Map.prototype.set(key, value): Permite agregar un par clave-valor al objeto Map. Si la clave ya existe, actualiza su valor. Retorna el objeto Map actualizado.
+    Map.prototype.get(key): Retorna el valor asociado a una clave específica en el objeto Map. Si la clave no existe, retorna undefined.
+    Map.prototype.has(key): Verifica si una clave existe en el objeto Map. Retorna true si la clave existe y false en caso contrario.
+    Map.prototype.delete(key): Elimina un par clave-valor del objeto Map. Retorna true si el par fue eliminado exitosamente y false si la clave no existe.
+    Map.prototype.size: Retorna el número de pares clave-valor en el objeto Map.
+    Map.prototype.clear(): Remueve todos los pares clave-valor del objeto Map.
+
+*/
+
 // Creación de un Map vacío
 const myMap = new Map();
 
