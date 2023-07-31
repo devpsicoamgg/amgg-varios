@@ -5,11 +5,15 @@ const person = { name: "John", age: 30, city: "New York" };
 const { nameOne, age, cityOne } = person;
 
 console.log(nameOne); // Output: John
-console.log(age);  // Output: 30
+console.log(age); // Output: 30
 console.log(cityOne); // Output: New York
 
 // Ejemplo 2: Destructuración con asignación de alias
-const user = { firstName: "Alice", lastName: "Smith", email: "alice@example.com" };
+const user = {
+  firstName: "Alice",
+  lastName: "Smith",
+  email: "alice@example.com",
+};
 
 // Destructuración con asignación de alias
 const { firstName: fName, lastName: lName, email } = user;
@@ -43,12 +47,15 @@ const personDetails = {
   age: 30,
   address: {
     city: "New York",
-    country: "USA"
-  }
+    country: "USA",
+  },
 };
 
 // Destructuración anidada
-const { name, address: { city, country } } = personDetails;
+const {
+  name,
+  address: { city, country },
+} = personDetails;
 
 console.log(name); // Output: John
 console.log(city); // Output: New York

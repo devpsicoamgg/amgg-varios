@@ -1,11 +1,11 @@
 // Crear una nueva instancia de Date con la fecha y hora actual
 const fechaActual = new Date();
 console.log(fechaActual);
-console.log(fechaActual.toDateString()) // como me gusta
+console.log(fechaActual.toDateString()); // como me gusta
 // Salida: "2023-07-26T08:30:00.000Z" (La fecha y hora actual en formato ISO 8601)
 
 // Crear una nueva instancia de Date con una fecha específica
-const fechaEspecifica = new Date('2023-12-31T23:59:59');
+const fechaEspecifica = new Date("2023-12-31T23:59:59");
 console.log(fechaEspecifica);
 
 // Salida: "2023-12-31T23:59:59.000Z"
@@ -35,12 +35,14 @@ const minutos = fechaActual.getMinutes();
 const segundos = fechaActual.getSeconds();
 const milisegundos = fechaActual.getMilliseconds();
 
-console.log(`Hora: ${hora}, Minutos: ${minutos}, Segundos: ${segundos}, Milisegundos: ${milisegundos}`);
+console.log(
+  `Hora: ${hora}, Minutos: ${minutos}, Segundos: ${segundos}, Milisegundos: ${milisegundos}`
+);
 
 // Salida: "Hora: 8, Minutos: 30, Segundos: 0, Milisegundos: 0"
 
 // Realizar cálculos con fechas: Agregar días a una fecha
-const fechaInicial = new Date('2023-07-26');
+const fechaInicial = new Date("2023-07-26");
 const diasAgregar = 5;
 
 fechaInicial.setDate(fechaInicial.getDate() + diasAgregar);
@@ -49,42 +51,40 @@ console.log(fechaInicial);
 // Salida: "2023-07-31T00:00:00.000Z" (Fecha inicial + 5 días)
 
 // Comparar fechas
-const fecha1 = new Date('2023-07-26');
-const fecha2 = new Date('2023-07-31');
+const fecha1 = new Date("2023-07-26");
+const fecha2 = new Date("2023-07-31");
 
 if (fecha1 < fecha2) {
-  console.log('La fecha 1 es anterior a la fecha 2.');
+  console.log("La fecha 1 es anterior a la fecha 2.");
 } else if (fecha1 > fecha2) {
-  console.log('La fecha 1 es posterior a la fecha 2.');
+  console.log("La fecha 1 es posterior a la fecha 2.");
 } else {
-  console.log('Ambas fechas son iguales.');
+  console.log("Ambas fechas son iguales.");
 }
 
 // Salida: "La fecha 1 es anterior a la fecha 2."
 
-
-
 function calcularEdad(fechaNacimiento, fechaActuales) {
-    const nacimiento = new Date(fechaNacimiento);
-    const actual = new Date(fechaActuales);
-  
-    // Calcular la diferencia en milisegundos
-    const diferenciaMilisegundos = actual - nacimiento;
-  
-    // Calcular la edad en años, meses y días
-    const edadFecha = new Date(diferenciaMilisegundos);
-    const edadAnios = edadFecha.getUTCFullYear() - 1970;
-    const edadMeses = edadFecha.getUTCMonth();
-    const edadDias = edadFecha.getUTCDate() - 1;
-  
-    return { Años: edadAnios, meses: edadMeses, dias: edadDias };
-  }
-  
-  // Ejemplo de uso
-  const fechaNacimiento = "1979-11-16";
-  const fechaActuales = "2023-07-27";
-  
-  const edad = calcularEdad(fechaNacimiento, fechaActuales);
-  console.log(edad);
-  
-  // Salida: { años: 42, meses: 8, dias: 10 }  
+  const nacimiento = new Date(fechaNacimiento);
+  const actual = new Date(fechaActuales);
+
+  // Calcular la diferencia en milisegundos
+  const diferenciaMilisegundos = actual - nacimiento;
+
+  // Calcular la edad en años, meses y días
+  const edadFecha = new Date(diferenciaMilisegundos);
+  const edadAnios = edadFecha.getUTCFullYear() - 1970;
+  const edadMeses = edadFecha.getUTCMonth();
+  const edadDias = edadFecha.getUTCDate() - 1;
+
+  return { Años: edadAnios, meses: edadMeses, dias: edadDias };
+}
+
+// Ejemplo de uso
+const fechaNacimiento = "1979-11-16";
+const fechaActuales = "2023-07-27";
+
+const edad = calcularEdad(fechaNacimiento, fechaActuales);
+console.log(edad);
+
+// Salida: { años: 42, meses: 8, dias: 10 }

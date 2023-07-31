@@ -19,13 +19,22 @@ class Paciente {
   // Los métodos van fuera del constructor
   // nombre del método () { }
   informacion() {
-    console.log(`El paciente ${this.nombre} está actualmente con diagnóstico de ${this.dx}`);
+    console.log(
+      `El paciente ${this.nombre} está actualmente con diagnóstico de ${this.dx}`
+    );
   }
 }
 
 // Clase que hereda de Paciente, llamada Caracteristica
 class Caracteristica extends Paciente {
-  constructor(nombre, nacionalidad, telefono, dx, correo, caracteristicaEspecial) {
+  constructor(
+    nombre,
+    nacionalidad,
+    telefono,
+    dx,
+    correo,
+    caracteristicaEspecial
+  ) {
     // Llamada al constructor de la clase base (Paciente) utilizando la palabra reservada "super"
     super(nombre, nacionalidad, telefono, dx, correo);
 
@@ -35,17 +44,32 @@ class Caracteristica extends Paciente {
 
   // Método específico para Caracteristica
   mostrarCaracteristicaEspecial() {
-    console.log(`Este paciente tiene la característica: ${this.caracteristicaEspecial}`);
+    console.log(
+      `Este paciente tiene la característica: ${this.caracteristicaEspecial}`
+    );
   }
 }
 
 // Creación de una instancia de Paciente
-let pcte1 = new Paciente("Alberto", "Colombiano", 2462672626, "F412- Mixto", "psico.amgg@gmail.com");
+let pcte1 = new Paciente(
+  "Alberto",
+  "Colombiano",
+  2462672626,
+  "F412- Mixto",
+  "psico.amgg@gmail.com"
+);
 console.log(pcte1); // Se invoca
 pcte1.informacion();
 
 // Creación de una instancia de Caracteristica
-let pcteCaracteristica = new Caracteristica("Carlos", "Mexicano", 3545355353, "G221 - Esquizofrenia", "carlos@gmail.com", "Ideación Suicida");
+let pcteCaracteristica = new Caracteristica(
+  "Carlos",
+  "Mexicano",
+  3545355353,
+  "G221 - Esquizofrenia",
+  "carlos@gmail.com",
+  "Ideación Suicida"
+);
 console.log(pcteCaracteristica);
 pcteCaracteristica.informacion();
 pcteCaracteristica.mostrarCaracteristicaEspecial();

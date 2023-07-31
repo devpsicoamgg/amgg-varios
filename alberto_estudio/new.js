@@ -6,7 +6,7 @@ function cuantosEstanOnLine(usuarios) {
   for (prop in usuarios)
     if (usuarios[prop].online) {
       count += 1;
-      usser.push(prop)
+      usser.push(prop);
     }
   return `${count} son el total de los usuarios Online y sus nombre son ${usser}`;
 }

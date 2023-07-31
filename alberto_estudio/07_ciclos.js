@@ -29,7 +29,7 @@ const persona = {
   nombre: "Juan",
   edad: 30,
   altura: 1.75,
-  peso: 75
+  peso: 75,
 };
 
 for (let propiedad in persona) {

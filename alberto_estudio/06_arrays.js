@@ -1,20 +1,19 @@
-// 
+//
 
-
-function sumNumbers (array) { 
-//Crea un arreglo de números y calcula la suma de todos los elementos.
-var sum = 0;
-for (var i = 0; i < array.length; i++) {
+function sumNumbers(array) {
+  //Crea un arreglo de números y calcula la suma de todos los elementos.
+  var sum = 0;
+  for (var i = 0; i < array.length; i++) {
     sum = sum + array[i];
-}
-return sum
+  }
+  return sum;
 }
 //-------------------------------------------------------------------------------------------------------------------
-function arrayConcat (arr) { 
-    //Dado un arreglo de strings, conviértelo en un solo string concatenando todos los elementos.
-    var newArray = arr.join("");
-    return newArray;
-    }
+function arrayConcat(arr) {
+  //Dado un arreglo de strings, conviértelo en un solo string concatenando todos los elementos.
+  var newArray = arr.join("");
+  return newArray;
+}
 //Crea un arreglo de objetos, donde cada objeto tenga una propiedad "nombre" y otra propiedad "edad". Luego, filtra el arreglo para obtener solo los objetos cuya edad sea mayor o igual a 18.
 
 //Dado un arreglo de números, ordena los elementos de manera ascendente y luego de manera descendente.

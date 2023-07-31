@@ -50,7 +50,6 @@ console.log("Número máximo:", numeroMaximo); // Salida: 20
 const numeroMinimo = Math.min(10, 5, 20, 15);
 console.log("Número mínimo:", numeroMinimo); // Salida: 5
 
-
 // Método: Math.trunc()
 // Devuelve la parte entera de un número eliminando la parte decimal.
 const numero6 = 7.89;

@@ -79,7 +79,7 @@ function agregarPropiedad(objeto, propiedad) {
   return objeto;
 }
 
-console.log(agregarPropiedad({}, "amor"))
+console.log(agregarPropiedad({}, "amor"));
 
 function invocarMetodo(objeto, metodo) {
   // Debes crear una función que reciba un objeto y una cadena, e invoque el método correspondiente.
