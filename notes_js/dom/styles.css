@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Estilos para la sección de cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  background-color: black;
+  color: antiquewhite;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card figcaption {
+  margin-top: 5px;
+}
+
+/* Estilos para el campo de texto */
+input[type="text"] {
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para el enlace DOM */
+.link-dom {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: #007bff;
+  font-weight: bold;
+}

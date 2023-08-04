@@ -70,3 +70,70 @@ console.log("12)  Selección de elementos anidados con querySelectorAll -----");
 console.log("elementosLiNavAll = document.querySelectorAll()");
 const elementosLiNavAll = document.querySelectorAll("nav li");
 console.log(elementosLiNavAll); // Muestra una colección de elementos <li> dentro de la lista de navegación
+
+//--------------->
+
+// Seleccionar el elemento con clase "link-dom" usando querySelector
+const $linkDOM = document.querySelector(".link-dom");
+
+// Mostrar el objeto style que representa los estilos en línea del elemento
+console.log($linkDOM.style);
+
+// Obtener el valor del atributo "style" del elemento
+console.log($linkDOM.getAttribute("style"));
+
+// Obtener el valor de la propiedad "backgroundColor" del estilo en línea del elemento
+console.log($linkDOM.style.backgroundColor);
+
+// Obtener el valor de la propiedad "color" del estilo en línea del elemento
+console.log($linkDOM.style.color);
+
+// Obtener todos los estilos computados (incluidos los estilos heredados y aplicados por CSS) del elemento
+console.log(window.getComputedStyle($linkDOM));
+
+// Obtener el valor específico de la propiedad "color" en los estilos computados del elemento
+console.log(getComputedStyle($linkDOM).getPropertyValue("color"));
+
+// Establecer propiedades de estilo en el elemento usando setProperty
+$linkDOM.style.setProperty("text-decoration", "none");
+$linkDOM.style.setProperty("display", "block");
+$linkDOM.style.width = "50%";
+$linkDOM.style.textAlign = "center";
+$linkDOM.style.marginLeft = "auto";
+$linkDOM.style.marginRight = "auto";
+$linkDOM.style.padding = "1rem";
+$linkDOM.style.borderRadius = ".5rem";
+
+// Mostrar el objeto style actualizado después de establecer las propiedades
+console.log($linkDOM.style);
+
+// Mostrar el valor actualizado del atributo "style" del elemento
+console.log($linkDOM.getAttribute("style"));
+
+// Mostrar los estilos computados actualizados del elemento después de las modificaciones
+console.log(getComputedStyle($linkDOM));
+
+// Accediendo a las variables CSS (Custom Properties CSS) definidas en el :root
+const $html = document.documentElement, // Seleccionar el elemento HTML
+  $body = document.body; // Seleccionar el elemento body
+
+// Obtener el valor de la variable CSS "--yellow-color" definida en el :root
+let varYellowColor = getComputedStyle($html).getPropertyValue("--black-color");
+
+// Mostrar los valores de las variables CSS
+console.log(varDarkColor, varYellowColor);
+
+// Cambiar el color de fondo del body usando la variable CSS "--dark-color"
+$body.style.backgroundColor = varDarkColor;
+
+// Cambiar el color del texto del body usando la variable CSS "--yellow-color"
+$body.style.color = varYellowColor;
+
+// Modificar la variable CSS "--dark-color" en el :root
+$html.style.setProperty("--dark-color", "#000");
+
+// Actualizar el valor de la variable CSS después de modificarla
+varDarkColor = getComputedStyle($html).getPropertyValue("--dark-color");
+
+// Cambiar el color de fondo del body usando la variable CSS modificada
+$body.style.setProperty("background-color", varDarkColor);
